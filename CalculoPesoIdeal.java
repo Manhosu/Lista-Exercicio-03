@@ -4,7 +4,6 @@ public class CalculoPesoIdeal {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Solicitando informações do usuário
         System.out.println("Digite o nome:");
         String nome = scanner.nextLine();
         
@@ -17,7 +16,6 @@ public class CalculoPesoIdeal {
         System.out.println("Digite a idade:");
         int idade = scanner.nextInt();
 
-        // Calculando o peso ideal
         double pesoIdeal = 0;
         if (sexo == 'M') {
             if (altura > 1.70) {
@@ -47,7 +45,6 @@ public class CalculoPesoIdeal {
             }
         }
 
-        // Exibindo resultados
         if (pesoIdeal > 0) {
             System.out.printf("%s, seu peso ideal é: %.2f kg\n", nome, pesoIdeal);
         } else {

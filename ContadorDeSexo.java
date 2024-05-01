@@ -15,7 +15,6 @@ public class ContadorDeSexo {
             System.out.println("Digite o sexo da pessoa (M para Homem, F para Mulher):");
             String sexo = scanner.nextLine().trim().toUpperCase();
 
-            // Verifica o sexo e incrementa o contador apropriado
             if (sexo.equals("M")) {
                 totalHomens++;
                 System.out.println("Nome: " + nome + " - Sexo: Homem");
@@ -24,14 +23,13 @@ public class ContadorDeSexo {
                 System.out.println("Nome: " + nome + " - Sexo: Mulher");
             } else {
                 System.out.println("Entrada inválida. Por favor, digite M para Homem ou F para Mulher.");
-                i--; // Decrementa o índice para corrigir a entrada na próxima iteração
+                i--;
             }
         }
 
-        // Exibe o total de homens e mulheres
         System.out.println("\nTotal de Homens: " + totalHomens);
         System.out.println("Total de Mulheres: " + totalMulheres);
 
-        scanner.close(); // Fecha o scanner
+        scanner.close();
     }
 }

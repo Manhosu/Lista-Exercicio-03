@@ -17,10 +17,10 @@ public class DescontoCarangoVelho {
 
             double desconto;
             if (ano <= 2000) {
-                desconto = preco * 0.12;  // Desconto de 12%
+                desconto = preco * 0.12; 
                 totalCarrosAte2000++;
             } else {
-                desconto = preco * 0.07;  // Desconto de 7%
+                desconto = preco * 0.07;  
             }
 
             double precoFinal = preco - desconto;

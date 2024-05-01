@@ -6,7 +6,7 @@ public class ServicoMilitar {
 
         System.out.println("Digite o número de pessoas para avaliar:");
         int totalPessoas = scanner.nextInt();
-        scanner.nextLine(); // Consumir a nova linha restante
+        scanner.nextLine();
 
         int totalAptos = 0;
         int totalInaptos = 0;
@@ -20,12 +20,11 @@ public class ServicoMilitar {
 
             System.out.println("Digite a idade da pessoa:");
             int idade = scanner.nextInt();
-            scanner.nextLine(); // Consumir a nova linha restante
+            scanner.nextLine(); 
 
             System.out.println("A pessoa está em boa saúde? (S/N):");
             char saude = scanner.nextLine().toUpperCase().charAt(0);
 
-            // Verificação de aptidão
             boolean apto = (sexo == 'M' && idade >= 18 && idade <= 35 && saude == 'S');
             
             if (apto) {

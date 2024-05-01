@@ -4,7 +4,6 @@ public class CalculadoraCustoCarro {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Percentagem do distribuidor e impostos
         final double PERCENTAGEM_DISTRIBUIDOR = 0.28;
         final double IMPOSTOS = 0.45;
 

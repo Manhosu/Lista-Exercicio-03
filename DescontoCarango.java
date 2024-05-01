@@ -13,7 +13,7 @@ public class DescontoCarango {
             valorVeiculo = scanner.nextDouble();
 
             if (valorVeiculo == 0) {
-                break;  // Encerra o loop se o valor do veículo for zero
+                break; 
             }
 
             System.out.println("Digite o tipo de combustível (Álcool, Gasolina, Diesel):");
@@ -32,7 +32,7 @@ public class DescontoCarango {
                     break;
                 default:
                     System.out.println("Tipo de combustível inválido. Digite novamente.");
-                    continue;  // Continua o loop se o combustível não for válido
+                    continue;
             }
 
             double valorFinal = valorVeiculo - desconto;

@@ -14,11 +14,9 @@ public class AnaliseFinanceira {
             System.out.printf("Digite o preço de venda do produto %d: ", i);
             double precoVenda = scanner.nextDouble();
 
-            // Acumula a soma de custo e venda para cálculo de média
             somaCusto += precoCusto;
             somaVenda += precoVenda;
 
-            // Determina lucro, prejuízo ou empate
             if (precoVenda > precoCusto) {
                 System.out.println("Produto " + i + ": Lucro");
             } else if (precoVenda < precoCusto) {
@@ -28,11 +26,9 @@ public class AnaliseFinanceira {
             }
         }
 
-        // Calcula a média de custo e venda
         double mediaCusto = somaCusto / TOTAL_PRODUTOS;
         double mediaVenda = somaVenda / TOTAL_PRODUTOS;
 
-        // Exibe as médias de preço de custo e venda
         System.out.printf("Média de preço de custo: R$%.2f\n", mediaCusto);
         System.out.printf("Média de preço de venda: R$%.2f\n", mediaVenda);
 

@@ -4,11 +4,9 @@ public class ClassificacaoNadador {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Solicitando a idade do nadador
         System.out.println("Digite a idade do nadador:");
         int idade = scanner.nextInt();
 
-        // Classificando o nadador com base na idade
         if (idade >= 5 && idade <= 7) {
             System.out.println("Categoria: Infantil A");
         } else if (idade >= 8 && idade <= 10) {
